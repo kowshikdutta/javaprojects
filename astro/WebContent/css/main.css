@@ -1,0 +1,113 @@
+*{
+margin:0px;
+padding:0px;
+border:0px;
+box-sizing:border-box;
+font-family:Verdana;
+}
+
+html,body{
+width:100%;
+height:100%;
+font-family:Verdana;
+}
+
+:root {
+  --main-bg-color:linear-gradient(to bottom right, #ff4000, #ff9900);
+ //  --main-bg-color:red;
+  --secondary-bg-color:rgb(204, 51, 0);
+  --font-astro:Verdana;
+}
+
+body {
+background-image:url("../img/medusa.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+/**********-- Basic Structure of the Page --**********/
+
+#header {
+width:100%;
+height:10%;
+background:var(--main-bg-color);
+box-sizing:border-box;
+}
+
+#container {
+width:100%;
+height:85%;
+box-sizing:border-box;
+}
+
+#footer {
+width:100%;
+height:5%;
+background:var(--main-bg-color);
+box-sizing:border-box;
+padding:0px 5px;
+color:white;
+}
+
+#footer>button>span:before{
+	content:"\2709";
+	font-size:25px;
+	line-height:12px;
+	vertical-align:-5px;
+}
+
+
+/**********-- End Basic Structure of the Page --**********/
+
+.button {
+	width:15%;
+	height:100%;
+	border:none;
+	padding:5px;
+	text-align:center;
+	text-decoration:none;
+	display:inline-block;
+	font-size:16px;
+	cursor:pointer;
+	background-color:var(--main-bg-color);
+	box-sizing:border-box;
+}
+
+.social {
+	display:inline-block;
+	width:100px;
+	height:100%;
+	text-align:center;
+	text-decoration:none;
+	box-sizing:border-box;
+	font-size:16px;
+	line-height:10px;
+	border-radius:2px;
+	padding:10px;
+	color:white;
+}
+
+.social-facebook{
+	background: #3B5998;
+}
+
+.social-twitter{
+	background: #55ACEE;
+}
+
+.button-mailus {
+	width:10%;
+	height:100%;
+	float:right;
+	top:0px;
+	right:5px;
+	border:none;
+	padding:2px;
+	background-color:rgb(235, 235, 224);
+	display:inline-block;
+}
+
+::placeholder {
+color:grey;
+font-size:14px;
+font-style:italic;
+}

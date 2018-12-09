@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/main.css" charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/astro.css" charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/astro-mobile.css" charset="UTF-8"/>
+<script language="javascript" type="text/javascript" src="js/astro.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/login.js"></script>
+<title>Vedic Astrology</title>
+</head>
+<body>
+<div id="header">
+<div id="login-div" onclick="showLogin()">
+<img src="img/login.jpg">
+</div>
+</div>
+<div id="container">
+<div id="container-astro">
+<div class="content">
+<div id="content-item1" onclick="placeOrder()">
+<p>FREE</p>
+<p> Get your personal Horoscope. Completely Free</p>
+</div>
+<div id="content-item2" onclick="placeOrder()">
+<p>INR 500</p>
+<p>Get answer to your personal queries</p>
+</div>
+<div id="content-item3" onclick="placeOrder()">
+<p>INR 500</p>
+<p> Match horoscope for Marriage</p>
+</div>
+<div id="content-item4" onclick="placeOrder()">
+<p>INR 500</p>
+<p> Talk to our Astrolger. Book now.</p>
+</div>
+</div>
+<div class="newsletter"></div>
+<div class="feedback"></div>
+<div class="prediction">
+<h2>Monthly Prediction</h2>
+<div id="Aquarius" onclick="getPrediction(this)">
+<p>Aquarius</p>
+<img src="img/aquarius.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Aries" onclick="getPrediction(this)">
+<p>Aries</p>
+<img src="img/aries.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Cancer" onclick="getPrediction(this)">
+<p>Cancer</p>
+<img src="img/cancer.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Capricorn" onclick="getPrediction(this)">
+<p>Capricorn</p>
+<img src="img/capricorn.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Gemini" onclick="getPrediction(this)">
+<p>Gemini</p>
+<img src="img/gemini.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Leo" onclick="getPrediction(this)">
+<p>Leo</p>
+<img src="img/leo.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Libra" onclick="getPrediction(this)">
+<p>Libra</p>
+<img src="img/libra.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Pisces" onclick="getPrediction(this)">
+<p>Pisces</p>
+<img src="img/pisces.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Sagittarius" onclick="getPrediction(this)">
+<p>Sagittarius</p>
+<img src="img/sagittarius.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Scorpio" onclick="getPrediction(this)">
+<p>Scorpio</p>
+<img src="img/scorpio.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Taurus" onclick="getPrediction(this)">
+<p>Taurus</p>
+<img src="img/taurus.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+<div id="Virgo" onclick="getPrediction(this)">
+<p>Virgo</p>
+<img src="img/virgo.jpg" alt="Smiley face" style="width:100%;height:100%;border-radius:50%;border:1px solid red;">
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<b>Follow us on</b>
+<a href="#" class="social social-facebook">facebook</a>
+<a href="#" class="social social-twitter">twitter</a>
+<button class="button-mailus"><span>  Mail us</span></button>
+</div>
+<!-- Hidden contents of the page Starts here -->
+<!---------Start for Query Form-------->
+<div id="orderform">
+<a onclick="closeForm('orderform')" href="#" class="close-thik"></a>
+<button id="orderform-button-previous" onclick="processOrder()">Previous</button>
+<button id="orderform-button-next" onclick="processOrder()">Next</button>
+<ul id="progressorder">
+<li>Login</li>
+<li>Create</li>
+<li>Review</li>
+<li>Submit</li>
+</ul>
+<fieldset class="fieldgroup">
+<h2>Personal Details</h2>
+<input type="text" placeholder="Full Name"></input>
+<input type="text" placeholder="Date of Birth(DD/MM/YYYY)"></input>
+<input type="text" placeholder="Time of Birth(HH:MM:SS)"></input>
+<input type="text" placeholder="City of Birth"></input>
+<input type="text" placeholder="District / County of Birth"></input>
+<input type="text" placeholder="State of Birth"></input>
+<input type="text" placeholder="Country of Birth"></input>
+<input type="text" placeholder="PIN / ZIPCODE"></input>
+</fieldset>
+<fieldset class="fieldgroup">
+<h2>Your Query</h2>
+<textarea class="orderform-textarea" placeholder="Please give us some background for your query..."></textarea>
+<textarea class="orderform-textarea" placeholder="Please specify your query..."></textarea>
+</fieldset>
+</div>
+<!-- End of Query Form -->
+
+<!-- Login Form -->
+<div id="loginform">
+<div id="loginform-button">
+<button class="loginform-button" onclick="signIn()">Login</button>
+<button class="loginform-button" onclick="signUp()">New User</button>
+</div>
+<div id="loginform-login">
+<p><input type="text" id="email" name="email" placeholder="Enter Email"></p>
+<p><input type="text" id = "password" name="password" placeholder="**********"></p>
+<button id="loginform-submit" onclick="checkLogin()">Sign In</button><br><br>
+<a href="#">Forgot Password</a>
+<button  onclick="closeForm('loginform')">Close x</button>
+</div>
+<div id="loginform-create">
+<p><input type="text" placeholder="Enter Email"></p>
+<p><input type="text" placeholder="Password"></p>
+<p><input type="text" placeholder="Re-type password"></p>
+<p><input type="text" placeholder="Firstname"></p>
+<p><input type="text" placeholder="Lastname"></p>
+<button  onclick="doRegister()">Sign Up</button><br><br>
+<button  onclick="closeForm('loginform')">Close x</button>
+</div>
+
+</div>
+<!-- End of Login Form -->
+<!-- Start of Monthly Forecast Form -->
+<div id="forecastform">
+<div id="forecastform-header">
+<button class="button button2" onclick="closeForm('forecastform')">X</button>
+</div>
+<div id="forecastform-body"></div>
+</div>
+<!-- End of Monthly Forecast Form -->
+
+</div>
+<!-- Hidden contents of the page ends here -->
+</body>
+</html>

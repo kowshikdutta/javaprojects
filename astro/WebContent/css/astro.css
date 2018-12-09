@@ -1,0 +1,449 @@
+#container-astro {
+width:100%;
+height:100%;
+box-sizing:border-box;
+display:grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 30% 25% 45%;
+}
+
+
+/**********-- End Basic Structure of the Page --**********/
+
+/******************************** Additional Style for Header *************************************************/
+
+#login-div {
+height:100%;
+width:8%;
+box-sizing:border-box;
+text-align:center;
+float:right;
+margin-right:40px;
+cursor:pointer;
+}
+
+#login-div img{
+width:50%;
+height:80%;
+border-radius:50%;
+margin-top:5%;
+}
+
+
+/*********************************End Additional Style for Header********************************************/
+
+/********************************--Additional Style for Container-Astro --********************************************/
+.content {
+grid-column:1/4;
+grid-row:1/3;
+box-sizing:border-box;
+display:flex;
+align-items:center;
+justify-content:space-around;
+/*display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr;
+background-color:blue;*/
+}
+
+.content div {
+box-sizing:border-box;
+width:20%;
+height:80%;
+cursor:pointer;
+border-radius:5px;
+box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.content>div p:nth-child(1){
+	display:block;
+	width:100%;
+	height:15%;
+	background:var(--main-bg-color);
+	line-height:30px;
+	border-radius:5px 5px 0 0;
+	font-weight:bold;
+	color:white;
+	font-size:20px;
+	text-align:center;
+}
+
+.content>div p:nth-child(2){
+	display:block;
+	width:100%;
+	height:85%;
+	background:white;
+	color:grey;
+	font-size:17px;
+	text-align:center;
+	font-family:Arial;
+	box-sizing:border-box;
+	border-radius:0px 0px 5px 5px;
+}
+
+
+.newsletter {
+grid-column:4/5;
+grid-row:1/3;
+background-color:rgba(255, 51, 0,0.8);
+}
+
+.prediction {
+grid-column:1/4;
+grid-row:3/4;
+display:flex;
+flex-flow: row wrap;
+justify-content:space-around;
+align-items:flex-start;
+}
+
+.prediction div {
+margin: 0% 3% 2% 2%;
+box-sizing:border-box;
+width:10%;
+height:35%;
+cursor:pointer;
+border-radius:5px;
+box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.prediction h2{
+	display:block;
+	width:100%;
+	height:15%;
+	margin:0px;
+	margin-top:-5px;
+	padding: 0 0 10px 10px;
+	text-align:left;
+	box-sizing:border-box;
+	color:orange;
+}
+
+.prediction>div p{
+	display:block;
+	width:100%;
+	height:25%;
+	background:var(--main-bg-color);
+	line-height:20px;
+	border-radius:5px 5px 0 0;
+	font-weight:bold;
+	color:white;
+	font-size:16px;
+	text-align:center;
+}
+
+.prediction>div img{
+	display:block;
+	max-width:90%;
+	max-height:70%;
+	margin:0px auto;
+	border-radius:0px 0px 5px 5px;
+	border:none;
+}
+
+.feedback {
+grid-column:4/5;
+grid-row:3/4;
+background-color:rgba(153, 153, 255,0.8);
+}
+
+/*********************************End Additional Style for Content********************************************/
+
+/***********************************Login Form CSS ***********************************************************/
+
+#loginform {
+position:absolute;
+top:10%;
+left:70%;
+//transform:translate(-150px,-200px);
+width:25%;
+height:60%;
+background-color:rgb(255,255,255);
+box-sizing:border-box;
+visibility:hidden;
+box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#loginform-button {
+	display:flex;
+	width:100%;
+	min-height:15%;
+}
+
+.loginform-button {
+	display:inline-block;
+	width:50%;
+	height:20%;
+	background:orange;
+	padding:15px;
+	box-sizing:border-box;
+	font-size:16px;
+	color:white;
+	font-weight:bold;
+	font-family:var(--font-astro);
+	cursor:pointer;
+}
+
+.loginform-button:nth-child(2) {
+	background:transparent;
+	background-color:rgba(51, 102, 255,0.6);
+}
+
+
+
+#loginform-login {
+	width:100%;
+	height:85%;
+	padding:25px;
+}
+
+#loginform-login p{
+width:100%;
+margin-bottom:15px;
+}
+
+
+#loginform-login input[type="text"], input[type="password"]
+{
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Verdana;
+  border: 1px solid #aaaaaa;
+  box-sizing:border-box;
+}
+
+::placeholder {
+color:grey;
+font-size:14px;
+font-style:italic;
+}
+
+#loginform-login button:nth-of-type(1) {
+border:none;
+outline:none;
+height:40px;
+width:100%;
+color:white;
+font-size:16px;
+apdding:10px;
+background:var(--main-bg-color);
+cursor:pointer;
+margin-top:20px;
+}
+
+#loginform-login button:nth-of-type(2){
+	position:absolute;
+	min-width:15%;
+	background-color:transparent;
+	bottom:0px;
+	right:5px;
+	font-size:14px;
+	cursor:pointer;
+	padding:5px;
+	text-decoration:underline;
+}
+
+#loginform-login a{
+	text-decoration:none;
+	color:blue;
+	margin-top:20px; 
+	display:block;
+}
+
+#loginform-create {
+	display:none;
+	padding:0px 25px 0 25px;
+}
+
+#loginform-create p {
+	width:100%;
+	margin-bottom:10px;
+	padding:0px;
+}
+
+#loginform-create input[type="text"], input[type="password"]
+{
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Verdana;
+  border: 1px solid #aaaaaa;
+  box-sizing:border-box;
+}
+
+#loginform-create button:nth-of-type(1) {
+border:none;
+outline:none;
+height:40px;
+width:100%;
+color:white;
+font-size:16px;
+apdding:10px;
+background:var(--main-bg-color);
+cursor:pointer;
+}
+
+#loginform-create button:nth-of-type(2){
+	position:absolute;
+	min-width:15%;
+	background-color:transparent;
+	bottom:0px;
+	right:5px;
+	font-size:14px;
+	cursor:pointer;
+	padding:5px;
+	text-decoration:underline;
+}
+
+/*********************************End Login Form CSS ********************************************************/
+
+/*********************************--Start of Order Form--***************************************************/
+#orderform {
+position:absolute;
+width:40%;
+height:80%;
+top:10%;
+left:30%;
+background-color:white;
+border:1px solid grey;
+visibility:hidden;
+overflow:scroll;
+}
+
+#orderform>ul{
+margin-top:60px;
+margin-bottom:20px;
+
+}
+
+#orderform>ul>li{
+list-style-type:none;
+float:left;
+width:25%;
+font-size:15px;
+text-transform:uppercase;
+}
+
+
+#orderform>fieldset>input{
+box-sizing:border-box;
+padding:20px 0px;
+width:40%;
+height:18px;
+margin-bottom:10px;
+outline:none;
+border-bottom:1px solid grey;
+font-size:16px;
+margin-left:7%;
+}
+
+#orderform>fieldset> input:nth-of-type(1){
+ width:80%;
+ color:pink;
+}
+
+[class*='close-'] {
+  color: #777;
+  font: 20px/100% arial, sans-serif;
+  position: absolute;
+  right: 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 10px;
+}
+
+.close-thik:after {
+  content: 'X'; /* UTF-8 symbol */
+}
+
+.orderform-textarea {
+    width: 100%;
+    height:150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.orderform-textarea:nth-child(3){
+height: 50px;
+}
+
+#orderform button {
+    
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:absolute;
+    bottom:10px;
+    background-color: #008CBA;
+}
+
+#orderform>button:nth-of-type(1){
+left:20px;
+
+}
+
+#orderform>button:nth-of-type(2){
+right:20px;
+/*background-color: #4CAF50; Green */
+}
+
+
+/****************************-- End of Order Form --******************************************************/
+
+/****************************-- Start of Forecast Form --*************************************************/
+
+#forecastform {
+position:absolute;
+top:5%;
+left:30%;
+width:40%;
+height:85%;
+visibility:hidden;
+background-color:white;
+border:1px solid var(--main-bg-color);
+box-sizing:border-box;
+box-shadow: 0 4px 2px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
+border-radius:6px 6px 0 0;
+}
+
+#forecastform div:nth-child(1){
+	width:100%;
+	height:7%;
+	background:var(--main-bg-color);
+	display:flex;
+	justify-content:flex-end;
+	border-radius:5px 5px 0 0;
+}
+
+#forecastform div:nth-child(2){
+	width:97%;
+	height:87%;
+	overflow-y:scroll;
+	text-align:left;
+	box-sizing:border-box;
+	margin:3% 0% 3% 3%;
+}
+
+#forecastform div:nth-child(2) h2{
+	text-align:left;
+	padding:0px;
+	margin:0px;
+	margin-bottom:3px;
+	color:orange;
+}
+
+.button2 {color:black; text-align:right;margin-right:2%;padding:0px;background-color:transparent;}
+
+/****************************-- End of Forecast Form --*************************************************/

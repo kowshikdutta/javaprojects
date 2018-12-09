@@ -1,0 +1,119 @@
+@media screen and (max-width: 480px) {
+	
+body {
+	width:100%;
+	height:200%;
+	margin:0px;
+	border:0px;
+	padding:0px;
+}	
+	
+#header {
+width:100%;
+height:10%;
+background-color:red;
+box-sizing:border-box;
+}
+
+#container {
+width:100%;
+height:85%;
+box-sizing:border-box;
+}
+
+#container-astro {
+width:100%;
+height:100%;
+box-sizing:border-box;
+display:grid;
+grid-template-columns: 100%;
+grid-template-rows: 40% 40% 10% 10%;
+}
+#footer {
+width:100%;
+height:5%;
+background-color:red;
+box-sizing:border-box;
+}
+
+/**********-- End Basic Structure of the Page --**********/
+
+/******************************** Additional Style for Header *************************************************/
+
+#login-div {
+height:100%;
+width:8%;
+box-sizing:border-box;
+text-align:center;
+float:right;
+cursor:pointer;
+}
+
+#login-div img{
+width:50%;
+height:80%;
+border-radius:50%;
+margin-top:5%;
+}
+
+
+/*********************************End Additional Style for Header********************************************/
+
+/********************************--Additional Style for Container-Astro --********************************************/
+.content {
+grid-column:1/2;
+grid-row:1/2;
+box-sizing:border-box;
+border-bottom:1px solid grey;
+display:flex;
+align-items:center;
+justify-content:space-around;
+/*display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr;
+background-color:blue;*/
+}
+
+.content div {
+box-sizing:border-box;
+width:20%;
+height:80%;
+background-color:rgba(244, 82, 7,0.7);
+onclick: getPrediction();
+cursor:pointer;
+}
+
+.prediction {
+grid-column:1/2;
+grid-row:2/3;
+display:flex;
+flex-flow: row wrap;
+justify-content:space-around;
+align-items:flex-start;
+}
+
+.prediction div {
+margin-top:10px;
+box-sizing:border-box;
+width:8%;
+height:50%;
+cursor:pointer;
+border-radius:50px;
+}
+
+.newsletter {
+grid-column:1/2;
+grid-row:3/4;
+background-color:rgba(255, 51, 0,0.8);
+}
+
+
+
+.feedback {
+grid-column:1/2;
+grid-row:4/5;
+background-color:rgba(153, 153, 255,0.8);
+}
+
+/*********************************End Additional Style for Content********************************************/
+}

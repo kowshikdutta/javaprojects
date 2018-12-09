@@ -1,0 +1,93 @@
+#container {
+display:flex;
+flex-flow: row wrap;
+justify-content:space-around;
+align-items:center;	
+}
+
+.container-item {
+width:20%;
+height:30%;
+box-sizing:border-box;
+background:var(--main-bg-color);
+margin:10px;
+text-align:center;
+vertical-align:middle;
+color:white;
+font-weight:bold;
+font-size:25px;
+line-height:40px;
+padding-top:40px;
+box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#mainform {
+	position:absolute;
+	top:5%;
+	left:30%;
+	width:40%;
+	height:90%;
+	visibility:hidden;
+	background-color:white;
+	border: 1px solid var(--secondary-bg-color);
+	box-sizing:border-box;
+	
+}
+
+#mainform div:nth-of-type(1){
+	width:100%;
+	height:5%;
+	background-color:var(--secondary-bg-color);
+	display:flex;
+	justify-content:flex-end;
+}
+
+#mainform div:nth-of-type(2){
+	width:100%;
+	height:5%;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:#f8f8f8;
+}
+
+#mainform div:nth-of-type(3){
+	width:100%;
+	height:84%;
+    overflow-y:scroll;
+    box-sizing:border-box;
+    
+}
+
+#mainform-selector > select {
+	display:inline-block;
+	width:20%;
+	height:100%;
+	box-sizing:border-box;
+	padding:5px;
+	margin-left:2%;
+	border:1px solid var(--secondary-bg-color);
+}
+
+#mainform-selector > select:nth-child(3){
+	width:25%;
+}
+
+.mainform-body-textarea{
+	width:96%;
+	height:150px;
+	padding:12px 20px;
+	box-sizing:border-box;
+	border: 1px solid var(--secondary-bg-color);
+	border-radius:4px;
+	background-color:#f8f8f8;
+	resize:none;
+	margin-left:2%;
+	margin-right:2%;
+	margin-bottom:5px;
+}
+
+.button2 {color:black; text-align:right;margin-right:2%;padding:0px;background-color:transparent;}
+.button3 {margin-right:2%;background:var(--main-bg-color);padding:2px;height:100%;margin-left:2%;width:20%;}
+
+}
+
