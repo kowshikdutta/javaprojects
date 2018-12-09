@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="css/singlepage2.css"/>
+<script  type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script  type="text/javascript" src="js/singlepage2.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+</script>
+<title>SingePageApp</title>
+</head>
+<body>
+<div id="header">
+<p>Single Page Application</p>
+</div>
+<div id="menu">
+<nav>
+			<ul class="navClass">
+				<li><a href="#">MasterData</a>
+					<ul class="submenu">
+						<li><a href="#customertable">View Customer Data</a></li>
+						<li><a href="#modeltable">View Model Data</a></li>
+						<li><a href="#dealertable">View Dealer Data</a></li>
+					</ul></li>
+				<li><a href="#">TransactionData</a>
+					<ul class="submenu">
+						<li><a href="#salestable">View Sales Data</a></li>
+					</ul></li>
+				<li><a href="#">Reports</a>
+					<ul class="submenu">
+						<li><a href="#salescontribution">Sales By Brand</a></li>
+					</ul></li>
+			</ul>
+		</nav>
+</div>
+<div id="output">
+
+</div>
+
+<div id="footer">
+
+</div>
+</body>
+</html>

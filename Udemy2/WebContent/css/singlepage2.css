@@ -1,0 +1,116 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+}
+
+p,ul {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+#header {
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	background-color: #CCCCFF;
+	margin: 0px auto;
+}
+
+#header p {
+	margin: 0px auto;
+	padding-top: 15px;
+	font-size: 30px;
+}
+
+#menu {
+	width: 100%;
+	height: 30px;
+	background-color: #9999FF;
+	margin-top: 0px;
+}
+
+ul.navClass {
+	background-color: #9999FF;
+}
+
+ul.navClass>li {
+	list-style-type: none;
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	position: relative;
+	padding: 5px 20px;
+	text-align: center;
+}
+
+ul.submenu {
+	position: absolute;
+	color: red;
+	background-color: #9999FF;
+	visibility: hidden;
+	padding: 0px;
+	left: 0px;
+	width: 150px;
+	top: 30px;
+}
+
+ul.submenu>li {
+	list-style-type: none;
+	margin: 0px auto;
+	text-align: left;
+	position: relative;
+	width: 140px;
+	height: 20px;
+	padding: 5px;
+}
+
+ul.navClass>li:hover ul.submenu {
+	visibility: visible;
+}
+
+li:hover {
+	background-color: #2E5CB8;
+}
+
+a,a:hover,a:active {
+	text-decoration: none;
+	color: white;
+}
+
+#output {
+	width: 100%;
+	margin: 0px auto;
+	height: 400px;
+	text-align: center;
+}
+
+#footer {
+	width: 100%;
+	margin: 0px auto;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	text-align: center;
+	background-color: #CCCCFF;
+}
+
+/****************************************Formatting for the tables********************************************************/
+.customtable {width:80%;margin:0px auto;margin-top:30px;}
+.customtable>caption {font-size:20px;}
+.customtable>thead>tr {align:center;font-size:14px;}
+.customtable>thead>tr>th {background-color:#9999FF;color:white;text-align:center;vertical-align:middle;}
+.customtable>tbody {font-size:14px;overflow:auto;height:300px;}
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+/****************************************End Formatting for the tables****************************************************/
+#salescontribution{width:80%;margin:0px auto;margin-top:20px;}
+#chartarea {width:45%;float:left;margin-top:40px;height:100%;background-color:#CCCCFF;border:1px solid grey;}
+#salescontributiontable{width:45%;float:right;margin-top:40px;}
