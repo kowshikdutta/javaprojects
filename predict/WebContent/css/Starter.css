@@ -1,0 +1,61 @@
+*{
+	font-family:Verdana;
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-size:14px;
+	color:black;
+}
+
+input[type="button"]{
+	padding:5px;
+	background-color:#A9A9F5;
+	cursor:pointer;
+	outline:none;
+	font-weight:bold;
+	font-size:13px;
+	margin-top:-1px;
+}
+
+body {background-color:rgb(255, 204, 102);}
+
+#number1 {width:1000px;margin:0px auto;padding:5px;height:535px;margin-top:50px;}
+
+#number2 {width:125px;margin:0px auto;height:490px;float:left;margin-right:10px;visibility: hidden;}
+#number3 {width:974px;margin:0px auto;height:525px;}
+
+#number3a {width:970px;height:70px;background-color:#A9A9F5;line-height:65px;padding-left:10px;margin:1px auto;}
+#number3a h1 {margin:0px auto;font-size:25px;}
+
+#number3b {width:970px;margin:1px auto;height:30px;margin-bottom:10px;background-color:#EFF2FB;}
+table#table1 {margin:1px;width:350px;height:26px;text-align:center;float:left;margin-top:2px;}
+table#table1 td { border:1px solid black;width:150px;background-color:#A9A9F5;}
+table#table1 td a:link { text-decoration:none;}
+#number3c {width:970px;margin:1px auto;height:310px;margin-bottom:10px;background-color:#EFF2FB;}
+
+#number3c1 {width:960px;height:280px;margin:1px auto;background-color:#EFF2FB;}
+
+table#table2 {margin:10px;width:948px;}
+.td1 {width:75px;}
+.td2 {width:230px;}
+.td3 {width:643px;}
+
+table#table2 td {height:30px}
+
+tr >td:nth-of-type(1){
+	font-weight:bold;
+}
+
+#number3d {width:970px;margin:1px auto;height:30px;margin-bottom:10px;background-color:#EFF2FB;}
+#number3d1 {width:150px;margin:1px auto;height:26px;float:right;margin-right:10px;text-align:center;}
+#number3d2 {width:150px;margin:1px auto;height:26px;float:right;margin-right:10px;text-align:center;}
+#number3e {width:970px;margin:0px auto;height:26px;margin-top:2px;text-align:right;background-color:#A9A9F5;float:left;}
+#number4 {width:125px;margin:0px auto;height:490px;float:left;visibility: hidden;}
+
+::placeholder{
+	font-size:14px;
+	color:grey;
+	font-style:italic;
+	padding:2px;
+}
+/* border:1px solid #bbb;#EFF2FB; */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> Predictive Logistics</title>
+<link rel="stylesheet" type="text/css" href="css/Starter.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/predict.js"></script>
+</head>
+
+
+<body onload="pageLoad()">
+
+<div id="number1">
+
+
+<div id="number3">
+
+<div id="number3a">
+<h1>Predictive Logistics</h1>
+</div>
+
+<div id="number3b">
+
+<table id="table1">
+<tr>
+<td><b><a href="main.html">Home</a></b></td>
+<td><b><a href="howto.html">HowToExecute</a></b></td>
+<td><b><a href="contact.html">Contact us</a></b></td>
+</tr>
+</table>
+
+</div>
+
+<div id="number3c">
+<form id="inputform" enctype="multipart/form-data">
+<table id="table2">
+<colgroup>
+   <col class="td1">
+   <col class="td2">
+   <col class="td3">
+</colgroup>
+
+<tr>
+<td>Step1</td>
+<td>Please select historical data file</td>
+<td><input type="file" id="historyfile" name="historyfile" size=28></td>
+</tr>
+<tr>
+<td>Step2</td>
+<td>Enter delivery date</td>
+<td><input id="datepicker" name="datepicker" placeholder="yyyy-mm-dd"></td>
+</tr>
+<tr>
+<td>Step3</td>
+<td>Enter delivery number</td>
+<td><input type="number" id="deliverynumber" name="deliverynumber"></td>
+</tr>
+
+<tr>
+<td>Step4</td>
+<td colspan=2 align="center"><input type="button" value="Predict" onclick="uploadFile()"></td>
+</tr>
+
+<tr>
+<td></td>
+<td colspan=2 rowspan=4 align="center"><textarea rows="8" cols="100" id="outputtext"></textarea> </td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="number3d">
+
+<div id="number3d1">
+<input type="button" value="Get Error Records" onclick="getError()">
+</div>
+
+<div id="number3d2">
+<input type="button" value="Get Output" onclick="getResult()">
+</div>
+
+</div>
+
+<div id="number3e">
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
+

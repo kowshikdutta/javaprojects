@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <description></description>
+    <display-name>PredictServlet</display-name>
+    <servlet-name>PredictServlet</servlet-name>
+    <servlet-class>com.sap.cloud.sample.predict.PredictServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PredictServlet</servlet-name>
+    <url-pattern>/predict</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>main.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>SampleData</description>
+    <display-name>SampleData</display-name>
+    <servlet-name>SampleData</servlet-name>
+    <servlet-class>com.sap.cloud.sample.predict.SampleData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleData</servlet-name>
+    <url-pattern>/sampledata</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>GetResult</description>
+    <display-name>GetResult</display-name>
+    <servlet-name>GetResult</servlet-name>
+    <servlet-class>com.sap.cloud.sample.predict.GetResult</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetResult</servlet-name>
+    <url-pattern>/GetResult</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Get Error Details</description>
+    <display-name>GetError</display-name>
+    <servlet-name>GetError</servlet-name>
+    <servlet-class>com.sap.cloud.sample.predict.GetError</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetError</servlet-name>
+    <url-pattern>/GetError</url-pattern>
+  </servlet-mapping>
+</web-app>
